@@ -59,7 +59,7 @@ if (count($options) == 0) {
     }
     if (array_key_exists('n', $options)) {
         $operations_string .= "\n\t- " . T_('Setting Catalog name');
-        $catname = Dba::escape(preg_replace("/[^a-z0-9\. -]/i", "", $options['n']));
+        $catname = Dba::escape($options['n']);
     }
     if (array_key_exists('t', $options)) {
         $operations_string .= "\n\t- " . T_('Setting Catalog type');
