@@ -61,7 +61,7 @@ class WebPlayer
      */
     protected static function get_types($item, $urlinfo, $transcode_cfg, $force_type = '')
     {
-        $types   = array('real' => 'mp3', 'player' => '');
+        $types   = array('real' => 'opus', 'player' => '');
 
         if ($item->codec) {
             $transcode = self::can_transcode($urlinfo['type'], $item->codec, $types, $urlinfo, $transcode_cfg, $force_type);
