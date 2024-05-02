@@ -1430,7 +1430,7 @@ final class VaInfo implements VaInfoInterface
         if (!empty($id3v2['UFID'])) {
             // Find the MBID for the track
             foreach ($id3v2['UFID'] as $ufid) {
-                if ($ufid['ownerid'] == 'http://musicbrainz.org') {
+                if ($ufid['ownerid'] == 'https://musicbrainz.org') {
                     $parsed['mb_trackid'] = $ufid['data'];
                 }
             }

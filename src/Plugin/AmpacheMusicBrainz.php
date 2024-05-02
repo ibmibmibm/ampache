@@ -46,7 +46,7 @@ class AmpacheMusicBrainz extends AmpachePlugin implements PluginGetMetadataInter
 
     public string $description = 'MusicBrainz metadata integration';
 
-    public string $url         = 'http://www.musicbrainz.org';
+    public string $url         = 'https://www.musicbrainz.org';
 
     public string $version     = '000003';
 

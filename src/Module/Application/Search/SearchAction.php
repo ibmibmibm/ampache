@@ -91,7 +91,7 @@ final class SearchAction implements ApplicationActionInterface
             require_once Ui::find_template('show_missing_artists.inc.php');
 
             printf(
-                '<a href="http://musicbrainz.org/search?query=%s&type=artist&method=indexed" target="_blank">%s</a><br />',
+                '<a href="https://musicbrainz.org/search?query=%s&type=artist&method=indexed" target="_blank">%s</a><br />',
                 rawurlencode($this->requestParser->getFromRequest('rule_1_input')),
                 T_('View on MusicBrainz')
             );

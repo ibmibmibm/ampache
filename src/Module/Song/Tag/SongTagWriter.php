@@ -539,7 +539,7 @@ final class SongTagWriter implements SongTagWriterInterface
         if (isset($song->mbid)) {
             $meta['unique_file_identifier'] = [
                 'data' => $song->mbid,
-                'ownerid' => "http://musicbrainz.org"
+                'ownerid' => "https://musicbrainz.org"
             ];
         }
         $user = Core::get_global('user');
